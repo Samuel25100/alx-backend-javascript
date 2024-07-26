@@ -7,10 +7,11 @@ export default class Building {
   }
 
   get sqft() {
-    return this.sqft;
+    return this._sqft;
   }
 
   evacuationWarningMessage() {
+    this._sqft = undefined;
     throw new Error('Class extending Building must override evacuationWarningMessage');
   }
 }
