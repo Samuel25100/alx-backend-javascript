@@ -41,3 +41,28 @@ const printTeacher: printTeacherFunction = (firstName: string, lastName: string)
 }
 
 console.log(PrintTeacher("John", "Doe"));
+
+interface Student {
+  firstName: string;
+  lastName: string;
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+class StudentClass implements Student{
+  firstName: string;
+  lastName: string;
+
+  StudentClass(fn: string, ln: string) {
+    this.firstName = fn;
+    this.lastName = ln;
+  }
+
+  workOnHomework(): string {
+    return 'Currently working';
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
