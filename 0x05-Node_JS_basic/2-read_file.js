@@ -20,7 +20,8 @@ function countStudents(path) {
       se.push(line[0]);
     }
   }
-  console.log(`Number of students: ${data.length - 2}`);
+
+  console.log(`Number of students: ${parsdata.length}`);
   console.log(`Number of students in CS: ${cs.length}. List ${cs.join(', ')}`);
   console.log(`Number of students in SWE: ${se.length}. List ${se.join(', ')}`);
 }
